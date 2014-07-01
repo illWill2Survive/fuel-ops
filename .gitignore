@@ -1,0 +1,6 @@
+###
+# Ignore Chef key files and secrets
+# ###
+*.swp
+.chef/
+.vagrant/

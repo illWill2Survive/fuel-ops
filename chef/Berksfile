@@ -1,0 +1,6 @@
+#!/usr/vin/env ruby
+
+source "https://api.berkshelf.com"
+
+cookbook 'nginx', git: 'git://github.com/opscode-cookbooks/nginx.git'
+cookbook 'omnibus_updater'
