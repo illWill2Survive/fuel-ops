@@ -34,7 +34,7 @@ Contact: [@GloveDotCom]
 ___
 Notes
 ---
-This is my first project to sharpen my skills has a Dev-Ops eng. 
+This is my first project to sharpen my skills as an Dev-Ops eng. 
 
 [Open Data]:https://github.com/illWill2Survive/Fuel-OD
 [Jaren Glover]:jarenglover.com
