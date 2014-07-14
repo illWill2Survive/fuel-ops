@@ -4,7 +4,9 @@ source "https://api.berkshelf.com"
 
 cookbook 'apt'
 cookbook 'git'
+cookbook 'sudo'
 cookbook 'build-essential'
+cookbook 'users'
 cookbook 'vim'
 cookbook 'emacs'
 cookbook 'nginx', git: 'git://github.com/opscode-cookbooks/nginx.git'

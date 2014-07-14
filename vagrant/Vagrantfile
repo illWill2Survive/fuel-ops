@@ -108,12 +108,16 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # HTTP instead of HTTPS depending on your configuration. Also change the
   # validation key to validation.pem.
   #
+
    config.vm.provision "chef_client" do |chef|
      chef.chef_server_url = "https://api.opscode.com/organizations/illmatic"
-     chef.validation_key_path = "./../chef/.chef/illmatic-validator.pem"
+     chef.validation_key_path = "./../.chef/illmatic-validator.pem"
      chef.validation_client_name = "illmatic-validator"
-     chef.node_name = "fuel_vm"
+     chef.node_name = "fuel_local"
+     chef.custom_config_path = "Vagrantfile.chef"
+   #  config.omnibus.chef_version = "11.12" 
    end
+   config.omnibus.chef_version = "11.4.0" 
   #
   # If you're using the Opscode platform, your validator client is
   # ORGNAME-validator, replacing ORGNAME with your organization name.
